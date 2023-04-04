@@ -1,0 +1,29 @@
+uuid: d959c15a-dd9e-48b3-8149-fa4d5ccaba9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cousine
+    - node.type.recipes
+    - taxonomy.vocabulary.cuisine
+id: node.recipes.field_cousine
+field_name: field_cousine
+entity_type: node
+bundle: recipes
+label: Cousine
+description: 'Here name Cuisine'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cuisine: cuisine
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
