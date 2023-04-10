@@ -1,0 +1,21 @@
+uuid: 93c96786-fddc-4025-b652-4a28e5d118b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_especialty
+    - node.type.article
+  module:
+    - text
+id: node.article.field_especialty
+field_name: field_especialty
+entity_type: node
+bundle: article
+label: Especialty
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

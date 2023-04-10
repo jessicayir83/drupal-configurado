@@ -1,0 +1,20 @@
+uuid: 8d162be0-5c4f-43b2-a998-e2cb899347c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_especialty
+field_name: field_especialty
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

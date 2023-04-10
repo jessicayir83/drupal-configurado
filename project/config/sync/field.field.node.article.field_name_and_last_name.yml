@@ -1,0 +1,21 @@
+uuid: 202ea2f3-ada0-4bf1-a01d-13c5bba5369b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name_and_last_name
+    - node.type.article
+  module:
+    - text
+id: node.article.field_name_and_last_name
+field_name: field_name_and_last_name
+entity_type: node
+bundle: article
+label: 'Name and Last name'
+description: 'Write the name of Chef!!'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

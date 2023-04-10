@@ -3,15 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment.default
-    - field.field.node.article.body
-    - field.field.node.article.comment
-    - field.field.node.article.field_image
-    - field.field.node.article.field_tags
-    - image.style.wide
+    - field.field.node.article.field_biography
+    - field.field.node.article.field_especialty
+    - field.field.node.article.field_imagen
+    - field.field.node.article.field_name_and_last_name
     - node.type.article
   module:
-    - comment
     - image
     - text
     - user
@@ -22,40 +19,37 @@ targetEntityType: node
 bundle: article
 mode: default
 content:
-  body:
+  field_biography:
     type: text_default
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 103
     region: content
-  comment:
-    type: comment_default
+  field_especialty:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_imagen:
+    type: image
     label: above
     settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
-    weight: 110
-    region: content
-  field_image:
-    type: image
-    label: hidden
-    settings:
-      image_style: wide
       image_link: ''
+      image_style: ''
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: -1
+    weight: 104
     region: content
-  field_tags:
-    type: entity_reference_label
+  field_name_and_last_name:
+    type: text_default
     label: above
-    settings:
-      link: true
+    settings: {  }
     third_party_settings: {  }
-    weight: 10
+    weight: 101
     region: content
   links:
     settings: {  }
